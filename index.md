@@ -34,4 +34,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This is NOT official library of document from MOLPay. Therefore, no official support will be given to you. Please use this library as a guideline to integrate MOLPay service with ASP.NET project. If there is any dispute between this document and official MOLPay release, please use the MOLPay version. 
+
+You also understand that you accept the risk and no other party will be held liable for any loss or damage cause by the usage of any information obtained in this page or software library.
