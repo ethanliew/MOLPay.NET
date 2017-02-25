@@ -28,10 +28,9 @@ To create object for preferred request, you might want to use below class:
 
 | API Function        | Class Name |
 | ------------- |:-------------:| 
-| Seamless Payment     | Seamless | 
+| Seamless Integration     | Seamless | 
 | Recurring Payment    | Recurring |   
-| Reversal Request | Reversal |
-| Capture Transaction | Capture |
+| MassPayment Profile | MassPayment |
 
 For example, to create Seamless Integration object, will look like this:
 ```C#
@@ -39,7 +38,7 @@ Seamless payment = new Seamless()
 ```
 
 #### Seamless Integration
-To send payment request using [Seamless Integration](https://github.com/MOLPay/Seamless_Integration) you may create object from `Seamless` class.
+Code snippet for payment request using [Seamless Integration](https://github.com/MOLPay/Seamless_Integration). You may create object from `Seamless` class.
 
 ```C#
 Seamless payment = new Seamless();
@@ -65,7 +64,7 @@ context.Response.Write(str);
 ```
 
 #### Recurring Payment
-To send recurring payment instruction, you may create object from `Recurring` class.
+Code snippet for recurring payment instruction. You may create object from `Recurring` class.
 
 ```C#
 NameValueCollection param = new NameValueCollection();
@@ -83,6 +82,36 @@ using (WebClient client = new WebClient()) {
   resp = client.UploadValues("https://www.onlinepayment.com.my/MOLPay/API/Recurring/input.php", param);
   context.Response.ContentType = "application/json";
   context.Response.Write(System.Text.Encoding.UTF8.GetString(resp));
+}
+```
+### Mass Payment Profile
+Code snippet for creating mass payment profile. You may create object from `MassPayment` class.
+```C#
+MassPayment Data = new MassPayment();
+MassPayment.PayeeProfile Person = new MassPayment.PayeeProfile();
+
+Person.Full_Name = "NUR FATHIA BINTI HASSAN";
+Person.Type = "Individual";
+Person.NRIC_Passport = "920321022468";
+Person.Country = "MY";
+Person.Bank_Code = "CIBBMYKL";
+Person.Bank_AccName = Person.Full_Name; // Match Full Name
+Person.Bank_AccNumber = "12345678";
+Person.Email = "fathia@gmail.com";
+Person.Mobile = "0123456781";
+            
+Data.Operator = "___MERCHANT___";
+Data.verifykey = "___VERIFYKEY___";
+Data.Func = "new";
+Data.Profile = Person;
+Data.Profilehash = "12345678";
+
+using (WebClient client = new WebClient()) {
+   NameValueCollection param = new NameValueCollection();
+   param.Add(Data.GetInstruction());
+   resp = client.UploadValues("https://www.onlinepayment.com.my/MOLPay/API/MassPayment/payee_profile.php", param);
+   context.Response.ContentType = "application/json";
+   context.Response.Write(System.Text.Encoding.UTF8.GetString(resp));
 }
 ```
 
