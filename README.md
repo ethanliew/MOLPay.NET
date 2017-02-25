@@ -1,4 +1,4 @@
-## Integrating MOLPay PG with ASP.NET
+## Integrating MOLPay API with ASP.NET
 Version 1.0.0.0
 
 ### Pre-Requisite
