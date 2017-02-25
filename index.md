@@ -1,5 +1,5 @@
 ## Integrating MOLPay PG with ASP.NET
-This library is 
+Version 1.0.0.0
 
 ### Pre-Requisite
 Please be ready with all this file and tool:
@@ -67,19 +67,11 @@ context.Response.ContentType = "text/json";
 context.Response.Write(str);
 ```
 
-#### MOLPay Recurring API (Recurring)
-
-
-#### Payment Status Query (PSQ)
-
-#### Payment Reversal (Reversal)
-
-#### Capturing Pre-Authorization Transaction (Capture)
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 ### Support or Contact
-
-This is NOT official library of document from MOLPay. Therefore, no official support will be given to you. Please use this library as a guideline to integrate MOLPay service with ASP.NET project. If there is any dispute between this document and official MOLPay release, please use the MOLPay version. 
+This is NOT official library from MOLPay. Therefore, no official support will be given to you. Please use this library as a guideline to integrate MOLPay service with ASP.NET project. If there is any dispute between this document and official MOLPay release, please use the MOLPay version. 
 
 You also understand that you accept the risk and no other party will be held liable for any loss or damage cause by the usage of any information obtained in this page or software library.
+
+
+### Changelog
+2017-02-25 - Initial Release with Seamless Integration
