@@ -23,7 +23,7 @@ Please be ready with all this file and tool:
 Import `MOLPay` library at any of project code file.
 
 ```C#
-Imports MOLPay
+using MOLPay
 ```
 
 To create object for preferred request, you might want to use below class:
