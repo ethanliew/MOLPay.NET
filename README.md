@@ -2,8 +2,6 @@
 Version 1.0.0
 
 ### Pre-Requisite
-Please be ready with all this file and tool:
-
 1. Visual Studio 2012 or above.
 2. MOLPay Development or Production ID.
 3. MOLPay General API
@@ -36,13 +34,13 @@ To create object for preferred request, you might want to use below class:
 | Reversal Request | Reversal |
 | Capture Transaction | Capture |
 
-For example, create object using C# will look like this and create object based on requirement parameter.
+For example, to create Seamless Integration object, will look like this:
 ```C#
 Seamless payment = new Seamless()
 ```
 
 #### MOLPay Seamless Integration (Seamless)
-To send payment request using [Seamless Integration](https://github.com/MOLPay/Seamless_Integration) you may create object from `Seamless` class a  
+To send payment request using [Seamless Integration](https://github.com/MOLPay/Seamless_Integration) you may create object from `Seamless` class.
 
 ```C#
 Seamless payment = new Seamless();
