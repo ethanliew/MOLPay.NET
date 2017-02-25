@@ -1,5 +1,5 @@
 ## Integrating MOLPay API with ASP.NET
-Version 1.0.0.0
+Version 1.0.0
 
 ### Pre-Requisite
 Please be ready with all this file and tool:
@@ -74,4 +74,4 @@ You also understand that you accept the risk and no other party will be held lia
 
 
 ### Changelog
-2017-02-25 - v1.0.0.0 - Initial Release with Seamless Integration 
+2017-02-25 - v1.0.0 - Initial Release with Seamless Integration 
