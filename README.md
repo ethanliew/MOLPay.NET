@@ -1,4 +1,4 @@
-## Integrating MOLPay API with ASP.NET
+## Integrating MOLPay with ASP.NET
 Version 1.0.0
 
 ### Pre-Requisite
@@ -9,7 +9,7 @@ Version 1.0.0
 ### Installation
 
 #### Via File Explorer
-1. Download `MOLPay.API.dll` library.
+1. Download `MOLPay.dll` library.
 2. Open Visual Studio project, right click on your project name in `Solution Explorer` and choose `Add Reference`.
 3. Click `Browse` to search for downloaded library. Click `OK` to add.
 
