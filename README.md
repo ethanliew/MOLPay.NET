@@ -84,7 +84,7 @@ using (WebClient client = new WebClient()) {
   context.Response.Write(System.Text.Encoding.UTF8.GetString(resp));
 }
 ```
-### Mass Payment Profile
+#### Mass Payment Profile
 Code snippet for creating mass payment profile. You may create object from `MassPayment` class.
 ```C#
 MassPayment Data = new MassPayment();
