@@ -1,10 +1,10 @@
 ## Integrating MOLPay with ASP.NET
-Version 1.0.0
+Version 1.0.1
 
 ### Pre-Requisite
 1. Visual Studio 2012 or above.
 2. MOLPay Development or Production ID.
-3. MOLPay General API
+3. MOLPay General API.
 
 ### Installation
 
@@ -122,4 +122,5 @@ You also understand that you accept the risk and no other party will be held lia
 
 
 ### Changelog
+2017-02-26 - v1.0.1 - Bug Fix
 2017-02-25 - v1.0.0 - Initial Release
