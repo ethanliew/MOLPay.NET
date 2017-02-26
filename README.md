@@ -122,5 +122,5 @@ You also understand that you accept the risk and no other party will be held lia
 
 
 ### Changelog
-2017-02-26 - v1.0.1 - Bug Fix
-2017-02-25 - v1.0.0 - Initial Release
+1. 2017-02-26 - v1.0.1 - Bug Fix
+2. 2017-02-25 - v1.0.0 - Initial Release
